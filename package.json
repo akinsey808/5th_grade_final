@@ -1,0 +1,19 @@
+{
+  "name": "5th_grade_final",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinsey808/5th_grade_final.git"
+  },
+  "author": "Anabel Kinsey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akinsey808/5th_grade_final/issues"
+  },
+  "homepage": "https://github.com/akinsey808/5th_grade_final#readme"
+}
