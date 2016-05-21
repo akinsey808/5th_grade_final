@@ -27,8 +27,8 @@ body {
 	}
 
 .flip-container, .front, .back, .front img, .back img {
-	width: 22vw;
-	height: 22vw;
+	width: 20vw;
+	height: 20vw;
 	position: absolute;
 
 }
@@ -50,7 +50,7 @@ body {
 	left: 0;
 	font-family: 'Poiret One';
 	font-weight: bold;
-	font-size: 2vw;
+	font-size: 1.1vw;
   box-shadow: 1vw 1vw 0.5vw lightblue;
 	overflow: hidden;
 	border-radius: 4vw;
@@ -74,27 +74,27 @@ body {
 	transform: rotateY(180deg);
 }
 
-#p1 {
+.p1 {
 	top:1vw;
 	left: 1vw;
 }
 
-#p2 {
+.p2 {
 	top: 1vw;
 	right: 2vw;
 }
 
-#p3 {
+.p3 {
 	bottom: 2vw;
 	left: 1vw;
 }
 
-#p4 {
+.p4 {
 	bottom: 2vw;
 	right: 2vw;
 }
 
-#p5 {
+.p5 {
 	top: calc(50% - 10vw);
 	left: calc(50% - 10vw);
 }
@@ -108,7 +108,7 @@ body {
 }
 
 #title2 {
-	top: 10vw;
+	top: 8vw;
 	font-size:4vw;
 }
 
