@@ -1,41 +1,18 @@
-function clickGrades() {
-  var buttons = document.querySelectorAll('#skills, #advice, #service');
-  for(var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-    button.style.display = 'None';
-  }
-  var button = document.querySelectorAll('#grades')[0];
-  button.style.display = 'block';
-}
+var activePage = 'grades';
+document.getElementById(activePage).classList.add('active-page');
+document.getElementById(activePage).classList.add('fade-in');
 
-function clickSkills() {
-  var buttons = document.querySelectorAll('#grades, #advice, #service');
-  for(var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-    button.style.display = 'None';
-  }
-  var button = document.querySelectorAll('#skills')[0];
-  button.style.display = 'block';
-}
-
-function clickAdvice() {
-  var buttons = document.querySelectorAll('#grades, #skills, #service');
-  for(var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-    button.style.display = 'None';
-  }
-  var button = document.querySelectorAll('#advice')[0];
-  button.style.display = 'block';
-}
-
-function clickService() {
-  var buttons = document.querySelectorAll('#grades, #skills, #advice');
-  for(var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-    button.style.display = 'None';
-  }
-  var button = document.querySelectorAll('#service')[0];
-  button.style.display = 'block';
+function buttonClick(page) {
+ var activePageElement = document.getElementById(activePage);
+ if (activePageElement) {
+   activePageElement.classList.remove('active-page');
+   activePageElement.classList.remove('fade-in');   
+   activePageElement.classList.add('fade-out');   
+ }   
+ activePage = page;
+ document.getElementById(activePage).classList.add('active-page');
+ document.getElementById(activePage).classList.add('fade-in');
+ document.getElementById(activePage).classList.remove('fade-out');
 }
 
 /*

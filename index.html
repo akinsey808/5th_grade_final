@@ -28,7 +28,7 @@
 					</svg>
 					<button 
             id="grades-button" 
-            onclick="clickGrades()"
+            onclick="buttonClick('grades')"
             class="button button--2" 
             style="position:absolute; left:4vw; top:5vw">
 						Grades
@@ -45,7 +45,7 @@
 					</svg>
 					<button 
             id="skills-button" 
-            onclick="clickSkills()"
+            onclick="buttonClick('skills')"
             class="button button--2" 
             style="position:absolute; left:4vw; top:10vw">
 						Skills
@@ -62,7 +62,7 @@
 					</svg>
 					<button 
             id="advice-button" 
-            onclick="clickAdvice()"
+            onclick="buttonClick('advice')"
             class="button button--2" 
             style="position:absolute; left:4vw; top:15vw">
 						Advice
@@ -79,7 +79,7 @@
 					</svg>
 					<button 
             id="service-button" 
-            onclick="clickService()"
+            onclick="buttonClick('service')"
             class="button button--2" 
             style="position:absolute; left:4vw; top:20vw">
 						Service
@@ -92,7 +92,7 @@
     <div id="right">
       <div id="title">My Waialae Experiences</div>
       <div id="title2">By Anabel Kinsey</div>
-      <div id="grades">
+      <div id="grades" class="page">
         <div
           id="grades-p1"
           class="p1 flip-container" 
@@ -192,7 +192,7 @@
           </div>
         </div>
       </div>
-      <div id="skills">
+      <div id="skills" class="page">
         
         <div 
           id="skills-p1"
@@ -293,10 +293,10 @@
         </div>
 
               </div>
-      <div id="advice">
+      <div id="advice" class="page">
         advice
       </div>
-      <div id="service">
+      <div id="service" class="page">
         service
       </div>
     </div>
