@@ -2,6 +2,21 @@ body {
 	overflow: hidden;
 }
 
+#left {
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 15.5vw;
+}
+
+#right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+  left: 15.5vw;
+}
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -95,4 +110,22 @@ body {
 #title2 {
 	top: 10vw;
 	font-size:4vw;
+}
+
+#skills, #advice, #service {
+ display: none;
+}
+
+
+.pt-page-flipOutRight {
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-animation: flipOutRight .5s both ease-in;
+	animation: flipOutRight .5s both ease-in;
+}
+.pt-page-flipInLeft {
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-animation: flipInLeft .5s both ease-out;
+	animation: flipInLeft .5s both ease-out;
 }
