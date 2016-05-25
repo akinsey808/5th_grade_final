@@ -1,6 +1,16 @@
 @font-face {
-    font-family: BrownBagLunch;
-    src: url(BrownBagLunch.ttf);
+  font-family: BrownBagLunch;
+  src: url(fonts/BrownBagLunch.ttf);
+}
+
+@font-face {
+  font-family: Tangerine;
+  src: url(fonts/Tangerine_Regular.ttf);
+}
+
+@font-face {
+  font-family: PoiretOne;
+  src: url(fonts/PoiretOne-Regular.ttf);
 }
 
 body {
@@ -53,7 +63,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-family: 'Poiret One';
+	font-family: 'PoiretOne';
 	font-weight: bold;
 	font-size: 1.1vw;
   box-shadow: 1vw 1vw 0.5vw lightblue;
@@ -352,6 +362,10 @@ body {
 		-moz-transition: margin-top 300ms 0ms;
 		-o-transition: margin-top 300ms 0ms;
 		-webkit-transition: margin-top 300ms 0ms;
+}
+
+.paper {
+	height: 93px !important;
 }
 .contact:hover .envelope .paper {
 		margin-top: -60px;
